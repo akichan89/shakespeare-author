@@ -1,0 +1,169 @@
+body {
+  width: 100vw;
+}
+
+// .headerWrapper {
+//   width: 100%;
+//   height: 200px;
+//   background-color: whitesmoke;
+// }
+
+.mainWrapper {
+  width: 100vw;
+}
+
+.ham {
+  position: absolute;
+  /* always keep ham on top of everything */
+  z-index: 100;
+  top: 20px;
+  //right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  //background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+  //background-size: 100%;
+}
+
+
+/* change ham image to close */
+.showClose {
+  //background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: whitesmoke;
+  //width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: #738678;
+  /* hide the menu above the screen by default */
+  transform: translateY(-100%);
+  /* transition adds a little animation when sliding in and out the menu */
+  transition: transform 0.2s ease;
+}
+
+
+.showNav {
+  /* show the menu */
+  transform: translateY(0);
+}
+
+/* basic nav styling below */
+
+.navbar ul {
+  //width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: #738678;
+  padding-bottom: 10px;
+  border-bottom: 2px solid whitesmoke;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.navbar ul li a:hover, .navbar ul li a:focus {
+  border-bottom: 2px solid white;
+}
+
+#outer-container {
+   display: flex;
+   align-items: center;
+   width: 100vw;
+   
+ }
+
+ .headerWrapper {
+   width: 100%;
+   height: 600px;
+   display: flex;
+   align-items: top;
+   justify-content: space-evenly;
+   margin: none;
+   padding: none;
+   background-color: white;
+ }
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  width: 50%;
+}
+
+// .carousel-wrapper {
+//   display: flex;
+//   padding-top: 20px;
+//   margin-top: 20px;
+//   justify-content: center;
+//   height: 400px;
+  
+// }
+
+.bookPreview {
+  display: flex;
+  padding-top: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  height: 400px;
+}
+
+// .carousel .slider-wrapper.axis-horizontal .slider .slide {
+//   display: flex;
+//   padding-top: 20px;
+//   margin-top: 20px;
+//   justify-content: center;
+ 
+// }
+
+// .booksShuffle {
+//   display: flex;
+//   padding-top: 20px;
+//   margin-top: 20px;
+//   justify-content: center;
+//   height: 400px;
+  
+// }
+
+
+// #outer-container h1 {
+//   width: 320px;
+//   margin-left: 60px;
+//   margin-bottom: none;
+//   padding-bottom: none;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+
+.socialIcons {
+   display: flex;
+  // align-items: stretch;
+  // justify-content: flex-start;
+  padding-top: 2em;
+  width: 50%;
+  float: right;
+}
+
+.socialIcons > a {
+  padding-right: 15px;
+  float: right;
+  
+}
+
+.wrapper > h1 {
+  color: #738678;
+}
+
